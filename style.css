@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(giphy\ \(2\).webp);
+    background-size: cover;
+}
+
+.box {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    height: 70%;
+    width: 30%;
+    border-radius: 10%;
+    background-image: url(bg_log2.webp);
+    background-size: cover;
+    /* transform: skew(10deg); */
+    animation: skewTab 5s linear infinite alternate;
+}
+
+@keyframes skewTab {
+    0% {
+        transform: skewX(10deg);
+    }
+    25% {
+        transform: skewY(10deg);
+    }
+    50% {
+        transform: skewX(-10deg);
+    }
+    75% {
+        transform: skewY(-10deg);
+    }
+    100% {
+        transform: skewX(10deg);
+}
+}
+
+.interface{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.email{
+    /* padding-left: 5%; */
+    padding-top: 15%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.emailBox {
+    /* padding-left: 5%; */
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+#emailText{
+    height: 2em;
+    width: 15em;
+    border-radius: 3em;
+    border: none;
+    padding-left: 2%;
+}
+
+.pass{
+    padding-top: 8%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.passBox {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#passText{
+    height: 2em;
+    width: 15em;
+    border-radius: 3em;
+    border: none;
+    padding-left: 2%;
+}
+
+.loginBtn{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#login{
+    color: white;
+    cursor: pointer;
+    height: 3em;
+    width: 70%;
+    border-radius: 2em;
+    border: none;
+    background-image: url(giphy\ \(3\).webp);
+    background-size: cover;
+}
+
+#login:hover{
+    background-color: #392B58;
+}
+
+#login:active{
+    transform: scale(0.8);
+}
+
+@media only screen and (max-width: 1024px) {
+    .login{
+        height: 25em;
+    width: 15em;
+    border-radius: 10%;
+    background-image: url(bg_log2.webp);
+    background-size: contain;
+    /* transform: skew(10deg); */
+    animation: skewTab 5s linear infinite alternate;
+    }
+}
